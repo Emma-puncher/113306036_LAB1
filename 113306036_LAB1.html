@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>introduce myself</title>
+</head>
+<body>
+<div align = "center">
+	<table border = "1">
+		<thead>
+			<tr>
+				<th colspan = "3">
+					About -- 113306036
+				</th>
+			</tr>
+		</thead>
+		
+		<tbody>
+			<tr>
+				<td rowspan = "3">
+					<img src = "Emma.JPG" alt = "personal photo" width = "135" height = "135"><br>personal photo
+				</td>
+
+				<td colspan = "2">
+					<label>Name:
+						<input name = "name" type = "text">
+					</label>
+					<br>
+					<label>Gender:
+						<input type = "radio" name = "Gender" checked> Male
+						<input type = "radio" name = "Gender"> Female
+						<input type = "radio" name = "Gender"> Other
+					</label>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<label>County:</label>
+					<select name = "county">
+						<option value = "Taipei">Taipei</option>
+						<option value = "Tainan">Tainan</option>
+						<option value = "Taichung">Taichung</option>
+						<option value = "Taoyuan">Taoyuan</option>
+					</select>
+				</td>
+				<td>
+					<form action = "/action_page.php">
+						<label for = "biryhday">Birthday:</label>
+						<input type = "date" id = "birthday" name = "birthday">
+					</form>
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan = "2">
+					<label for = "email">E-mail:</label>
+					<input type = "email" name = "email" required>
+				</td>
+			</tr>
+
+			<tr>
+				<td>Hobby</td>
+				<td colspan = "2">
+					<form action="/action_page.php">
+						<input type = "checkbox" name = "hobby"> Swimming
+						<input type = "checkbox" name = "hobby"> Volleyball
+						<input type = "checkbox" name = "hobby"> Movie
+						<input type = "checkbox" name = "hobby"> Game
+						<input type = "checkbox" name = "hobby"> sleep
+					</form>
+				</td>
+			</tr>
+
+			<tr>
+				<td>Skill</td>
+				<td colspan = "2">
+					<form action="/action_page.php">
+						<input type = "checkbox" name = "skill"> Java
+						<input type = "checkbox" name = "skill"> HTML
+						<input type = "checkbox" name = "skill"> Python
+						<input type = "checkbox" name = "skill"> Microsoft Office
+						<input type = "checkbox" name = "skill"> Premiere
+					</form>
+				</td>
+			</tr>
+
+			<tr>
+				<td>Say Something</td>
+				<td colspan = "2">
+					<input type = "textarea" name = "saySomething" placeholder = "Say something here.">
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan = "3">
+					<form method = "post" action = "http://www.deitel.com">
+						<input type = "reset" value = "重設">
+						<input type = "submit" value = "提交">
+					</form>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</body>
+</html>
